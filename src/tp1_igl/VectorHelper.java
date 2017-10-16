@@ -78,7 +78,34 @@ public class VectorHelper {
            
    }
    
-  
+      public void Trie_Bulle( int V[],int l)
+   {       boolean verif=true;
+           int m=l;
+   while (verif || m>2)
+   {
+        verif =false;
+        for (int i=0;i<m-1;i++)
+            {if (V[i]>V[i+1])
+                {
+                 int sauve =V[i];
+                 V[i]=V[i+1] ;
+                 V[i+1]=sauve;
+                 verif=true;
+                 }
+            m=m-1;
+           }
+   }
+    }
+   
+   
+    public void Vector_produit(int v[], int l)
+   { int j=0;
+    for (int i:v)
+    {
+        v[j]=l*i; j++;
+    }
+   
+   }
 
     
 }
