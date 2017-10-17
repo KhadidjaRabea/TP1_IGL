@@ -11,10 +11,11 @@ package tp1_igl;
  */
 public class VectorHelper {
     
-    
-       
-    
-   public void AffichVecteur(int vect[])
+    /** Afficher les éléments du vecteur vect
+     *
+     * @param vect un vecteur d'entiers 
+     */
+    public void AffichVecteur(int vect[])
     {   System.out.print("|");
         for (int i: vect)
         {
@@ -22,8 +23,12 @@ public class VectorHelper {
         }
     }
    
- 
-   public int length(int Vect[])
+    /** Donner la taille du vecteur 
+     *
+     * @param Vect vecteur d'entiers 
+     * @return
+     */
+    public int length(int Vect[])
    {   int l=0; 
     for (int i: Vect)
    { 
@@ -32,8 +37,11 @@ public class VectorHelper {
       return l;
    }  
    
- 
-   public void MaxMin (int Vect[]){
+    /** DOnner le min et max d'un vecteur 
+     *
+     * @param Vect veteur d'entier 
+     */
+    public void MaxMin (int Vect[]){
       
        int max=Vect[0];
        int min=Vect[0];
@@ -47,8 +55,12 @@ public class VectorHelper {
        System.out.println("Max= "+max+", Min="+min+" \n");
    }
    
-
-   public void inverser(int Vect [],int l)
+    /** inverser les éléments d'un vecteur 
+     *
+     * @param Vect vecteur d'entiers 
+     * @param l la taille du vecteur Vect
+     */
+    public void inverser(int Vect [],int l)
    {
        int inf,sup,x;
        inf=0; sup=l-1;
@@ -63,7 +75,14 @@ public class VectorHelper {
        }
    }
    
-   
+    /** Faire la somme des deux vecteurs v1 et v2
+     *
+     * @param V1 un vecteur d'entiers 
+     * @param V2 un vecteur d'entiers 
+     * @param l1 taille du v1
+     * @param l2 taille du v1
+     * @throws diffrenceInLengthException lancer une exception si les deux vecteurs ont des taille différentes 
+     */
     public void Somme2Vect(int V1[], int V2[], int l1,int l2) throws diffrenceInLengthException{
        
        if(l1!=l2)
@@ -78,7 +97,12 @@ public class VectorHelper {
            
    }
    
-      public void Trie_Bulle( int V[],int l)
+    /** trier les éléments du vecteur par la méthode "tri bulle"
+     *
+     * @param V un vecteur d'entiers
+     * @param l la taille du vecteur v
+     */
+    public void Trie_Bulle( int V[],int l)
    {       boolean verif=true;
            int m=l;
    while (verif || m>2)
@@ -97,7 +121,11 @@ public class VectorHelper {
    }
     }
    
-   
+    /** Multiplier les éléments du vecteur par l'entier l
+     *
+     * @param v vevteur d'entiers 
+     * @param l entier 
+     */
     public void Vector_produit(int v[], int l)
    { int j=0;
     for (int i:v)
@@ -105,7 +133,5 @@ public class VectorHelper {
         v[j]=l*i; j++;
     }
    
-   }
-
-    
+   }    
 }
