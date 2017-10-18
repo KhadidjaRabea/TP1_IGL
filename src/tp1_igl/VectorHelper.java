@@ -9,12 +9,21 @@ package tp1_igl;
  *
  * @author Khadidja
  */
+
+
 public class VectorHelper {
+    
+   
+    
     
     /** Afficher les éléments du vecteur vect
      *
      * @param vect un vecteur d'entiers 
      */
+    
+    public void VectorHelper (int vect []){
+       
+    }
     public void AffichVecteur(int vect[])
     {   System.out.print("|");
         for (int i: vect)
@@ -41,10 +50,10 @@ public class VectorHelper {
      *
      * @param Vect veteur d'entier 
      */
-    public void MaxMin (int Vect[]){
+    public void MaxMin (int Vect[] ){
       
-       int max=Vect[0];
-       int min=Vect[0];
+        int max=Vect[0];
+        int min=Vect[0];
        
        for( int i: Vect)
        {
@@ -60,7 +69,7 @@ public class VectorHelper {
      * @param Vect vecteur d'entiers 
      * @param l la taille du vecteur Vect
      */
-    public void inverser(int Vect [],int l)
+    public void inverser(int []Vect,int l)
    {
        int inf,sup,x;
        inf=0; sup=l-1;
@@ -73,6 +82,7 @@ public class VectorHelper {
            
            inf++; sup--;
        }
+     
    }
    
     /** Faire la somme des deux vecteurs v1 et v2
@@ -109,17 +119,19 @@ public class VectorHelper {
    {
         verif =false;
         for (int i=0;i<m-1;i++)
-            {if (V[i]>V[i+1])
+            {if (V[i]>V[i+1] || V[i]== V[i+1])
                 {
                  int sauve =V[i];
                  V[i]=V[i+1] ;
                  V[i+1]=sauve;
                  verif=true;
-                 }
-            m=m-1;
+                
+           
            }
    }
+        m=m-1;
     }
+   }
    
     /** Multiplier les éléments du vecteur par l'entier l
      *
@@ -133,5 +145,7 @@ public class VectorHelper {
         v[j]=l*i; j++;
     }
    
-   }    
+   } 
+    
+    
 }
