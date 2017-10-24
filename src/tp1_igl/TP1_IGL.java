@@ -11,11 +11,9 @@ package tp1_igl;
  */
 public class TP1_IGL {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-       
+     
     }
     
 }
