@@ -79,7 +79,7 @@ public class VectorHelper {
            if (i<min) min=i;
        }
      System.out.println("\n");
-     System.out.println("Min= "+min+", Max="+max+" \n");
+     System.out.println("max= "+max+", min="+min+" \n");
    }
    
     /**
