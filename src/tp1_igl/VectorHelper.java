@@ -34,6 +34,7 @@ public class VectorHelper {
     /**
      *
      * @return retourne un pointeur vers Vect
+     * retourne le maximum
      */
     public int[] getVect() {
         return Vect;
@@ -42,6 +43,7 @@ public class VectorHelper {
     /**
      *
      * @return le minimum dans Vect
+     * retourne le minimun 
      */
     public int getMin() {
         return min;
@@ -64,7 +66,7 @@ public class VectorHelper {
     }
   
     /**
-     * calculer le min et le max du vect 
+     * calculer le min et le max du vect :
      * exemple : Vect ={1,2,3,47,7}
      * min=1; max=47
      */
@@ -78,12 +80,12 @@ public class VectorHelper {
            if (i> max) max=i;
            if (i<min) min=i;
        }
-     System.out.println("\n");
+     //System.out.println("\n");
      System.out.println("Max= "+max+", Min="+min+" \n");
    }
    
     /**
-     * inverser les éléments du Vect
+     * inverser les éléments du Vect :
      * exemple: vect={4,8,7,46,93,3,1}
      *          resultat : vect={1,3,93,46,7,8,4}
      */
@@ -109,7 +111,7 @@ public class VectorHelper {
      * @param V2 un vecteur d'entiers 
      * @param l1 la taille du V1
      * @param l2 la taille du V2
-     * @throws diffrenceInLengthException
+     * @throws diffrenceInLengthException :
      * exemple : V1={1,2,-1,7} V2={0,5,6,4}
      *           l1=l2= 4
      *           resultat: V1={1,7,5,11} V2={0,5,6,4}
@@ -129,7 +131,7 @@ public class VectorHelper {
    }
    
     /**
-     * trier les éléments du Vect
+     * trier les éléments du Vect :
      * exemple : vect={7,8,-1,-2,6,7,3}
      *           resultat: vect{-2,-1,3,6,7,7,8}
      */
@@ -155,7 +157,7 @@ public class VectorHelper {
    }
    
     /**
-     * multiplier les éléments du Vect par n
+     * multiplier les éléments du Vect par n :
      * @param n un entier 
      * exemple: Vect={1,5,8,9} n=2
      *          Resultat : Vect={2,10,16,18}
@@ -167,6 +169,20 @@ public class VectorHelper {
         Vect[j]=n*i; j++;
     }
    
+    
+    
    } 
+    /**
+     * Afficher les éléments du vecteur
+     */
+    public void Affich(){
+    
+    System.out.println("taille= "+l);
+    for ( int i:Vect)
+    {
+       System.out.print(i+"|");
+    }
+    System.out.println("\n");
+    }
     
 }
